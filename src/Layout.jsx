@@ -26,9 +26,9 @@ export default function Layout() {
     }, [on]);
 
     return (
-        <div className="layoutBody d-flex text-bg-secondary">
-            <div className='layoutLeft w-25 h-100 d-flex flex-column justify-content-start align-items-center'>
-                <div className="logoContainer pt-4 w-100 d-flex justify-content-center align-items-center ">
+        <div className="layoutBody text-bg-secondary">
+            <div className='layoutLeft d-none d-sm-block h-100 d-flex flex-column justify-content-start align-items-center'>
+                <div className="logoContainer d-flex justify-content-center align-items-center ">
                     <div className="logo p-2 d-flex justify-content-center align-items-center  h-100 bg-dark">
                         <FontAwesomeIcon icon={faHippo} className="logoIcon text-light" />
                     </div>
@@ -64,7 +64,7 @@ export default function Layout() {
                     </motion.h4>
                 </div>
             </div>
-            <div className='layoutRight w-75 h-100'>
+            <div className='layoutRight h-100'>
                 <Todos />
             </div>
 

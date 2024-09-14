@@ -6,12 +6,14 @@ body{
 .layoutBody{
     height: 100vh;
     width: 100vw;
+    display: flex;
 }
 
 .layoutLeft{
     background-color: #9772d9;
 }
 .layoutRight{
+    width: 100rem;
     overflow-y: scroll;
     background-image: linear-gradient(to bottom, #e0ecfd, #f8e7e4);
 }
@@ -30,7 +32,7 @@ body{
     width: 30rem;
     height: auto;
     box-shadow: 3px 5px 5px 0px #e0b3fb;
-    
+    z-index: 999;
 }
 
 .editContainer{
@@ -80,12 +82,13 @@ body{
 
 
 .logoIcon{
-    height: 5rem;
+    height: 6rem;
 }
 
 .logoText{ 
     font-size: 4rem;
     font-weight: bold;
+    width: 20rem;
 }
 
 .barElements{ 
@@ -100,4 +103,30 @@ body{
 }
 
 
+@media (max-width: 1311px) {
+        .cards{
+            width: 20rem;
+            height: 25rem;
+        }
+
+        .logoText{
+            width: 15rem;
+            font-size: 3rem;
+        }
+        
+        .logoIcon{
+            height: 4rem;
+        }
+  }
+
+  @media (max-width: 700px) {
+    
+    .addCard{
+        width: 20rem;
+        height: auto;
+        box-shadow: 3px 5px 5px 0px #e0b3fb;
+        z-index: 999;
+    }
+    
+  }
 

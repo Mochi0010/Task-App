@@ -40,7 +40,7 @@ export default function Todos() {
   };
 
   return (
-    <div className="displayContainer pt-3 gap-4 w-100 h-100 d-flex flex-wrap justify-content-around align-items-center">
+    <div className="displayContainer px-3 pt-3 gap-4 w-100 h-100 d-flex flex-wrap justify-content-around align-items-center">
       {sortedTodos.map((todo) => (
         <motion.div className="cards card"
             initial={{ opacity: 1 }}
