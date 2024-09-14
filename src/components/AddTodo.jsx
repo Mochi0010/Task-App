@@ -50,7 +50,7 @@ export default function AddTodo({ onCreate }) {
               placeholder="Topic"
               value={formData.topic}
               onChange={handleChange}
-              
+              required
             />
             <label className="text-dark" htmlFor="topic">Topic</label>
           </div>
@@ -63,7 +63,7 @@ export default function AddTodo({ onCreate }) {
               name="dueDate"
               value={formData.dueDate}
               onChange={handleChange}
-              
+              required
             />
             <label htmlFor="dueDate">Due Date</label>
           </div>
@@ -75,7 +75,7 @@ export default function AddTodo({ onCreate }) {
               name="priority"
               value={formData.priority}
               onChange={handleChange}
-              
+              required
             >
               <option value="">Select Priority</option>
               <option value="high">High</option>
