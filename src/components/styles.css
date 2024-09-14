@@ -17,8 +17,8 @@ body{
 }
 
 .cards{
-    width: 30%;
-    height: 48%;
+    width: 25rem;
+    height: 27rem;
     box-shadow: 3px 5px 5px 0px #e0b3fb;
 }
 .addCardContainer{
@@ -92,7 +92,7 @@ body{
     margin-top: 10rem;
     font-size: 1rem; 
     z-index: 999; 
-    height: 35%;
+    height: 20rem;
 }
 
 .Elements{ 

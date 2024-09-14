@@ -72,6 +72,7 @@ export default function Layout() {
                 <FontAwesomeIcon icon={faPlus} className="icons text-light h-50" />
             </button>
 
+            {on &&
             <motion.div
                 ref={popupRef}
                 className="addCardContainer position-fixed"
@@ -80,6 +81,7 @@ export default function Layout() {
             >
                 <AddTodo onCreate={() => setOn(false)} />
             </motion.div>
+            }
         </div>
     );
 }
